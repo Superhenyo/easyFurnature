@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-container {
+  background-color: #F5E8D3;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#root {
+  background-color: #F5E8D3;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* NavBar.css */
+.navbar {
+  background-color: #dc7711c9 !important; /* Dark background */
+}
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: #000000 !important;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+  color: #000000 !important;
+}
+
+.landing-container {
+  background-color: #F5E8D3; /* Light background to match furniture theme */
+}
+
+/* NavBar.css  end*/
+
+/* Landing Page */
+/* Image column */
+.landing-image-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Text column */
+.text-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Motto styling */
+.motto-container h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #5a3e2b; /* Brown theme */
+  max-width: auto;
+}
+
+/* Landing Page end*/
+
+
+/* Feature */
+.feature-container {
+  background-color: white;
+}
+
+.fixed-card {
+  height: 100%; /* Ensures all cards have equal height */
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  height: 400px; /* Set a fixed height for images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Ensures images scale without distortion */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.mt-auto {
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.featured-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4A3F35; /* Brown theme to match your website */
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.featured-title::after {
+  content: "";
+  display: block;
+  width: 80px; /* Adjust width as needed */
+  height: 4px;
+  background-color: #D4A373; /* Accent color */
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+
+
+/* Feature end */
