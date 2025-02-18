@@ -5,35 +5,30 @@ import FeaturedProducts from "../components/FeaturedProducts";
 const LandingPage: React.FC = () => {
   return (
     <>
-      <Container fluid className="p-0 m-0 landing-container ">
+      <Container fluid className="p-0 m-0 landing-container position-relative">
         <Row className="m-0">
-          <Col
-            xs={12}
-            md={6}
-            className="landing-image-container d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/public/assets/e1f379c3-06d3-43b1-9f68-8c4cbd71d698.png"
-              alt="Furniture Display"
-              className="img-fluid"
-            />
-          </Col>
+          {/* Background Image */}
+          <img
+            src="/assets/LandingPage.webp"
+            alt="Furniture Display"
+            className="img-fluid w-100 p-0 landing-image"
+          />
 
+          {/* Overlay Text and Button */}
           <Col
-            xs={12}
-            md={6}
-            className="text-container d-flex flex-column align-items-center justify-content-center"
+            xs={10}
+            md={8}
+            className="motto-container text-center text-white position-absolute top-50 start-50 translate-middle"
           >
-            <div className="motto-container text-center">
-              <h3>
-                Gawa ng Kakaibang Kaginhawaan, Para sa Iyong Pangarap na Tahanan
-              </h3>
-            </div>
-            <button className="btn btn-primary">Shop Now</button>
+            <h3 className="fw-bold text-wrap text-uppercase d-inline-block">
+              Gawa ng Kakaibang Kaginhawaan, Para sa Iyong Pangarap na Tahanan
+            </h3>
+            <button className="btn btn-primary mt-3">Shop Now</button>
           </Col>
         </Row>
       </Container>
-      <Container fluid className="feature-container ">
+
+      <Container fluid className="feature-container">
         <Row className="m-0 mt-5 d-flex justify-content-center">
           <h1 className="featured-title">Featured Products</h1>
           <FeaturedProducts />

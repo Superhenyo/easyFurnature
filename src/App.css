@@ -6,16 +6,15 @@
 }
 
 .page-container {
-  background-color: #F5E8D3;
+  background-color: #f5e8d3;
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-
 #root {
-  background-color: #F5E8D3;
+  background-color: #f5e8d3;
   min-height: 100vh;
   width: 100%;
 }
@@ -41,7 +40,7 @@
 }
 
 .landing-container {
-  background-color: #F5E8D3; /* Light background to match furniture theme */
+  background-color: #f5e8d3; /* Light background to match furniture theme */
 }
 
 /* NavBar.css  end*/
@@ -54,22 +53,43 @@
   object-fit: cover;
 }
 
-/* Text column */
-.text-container {
-  text-align: center;
-  padding: 20px;
+.landing-image {
+  height: 100vh; /* Adjust height as needed */
+  object-fit: cover; /* Ensures image covers the area properly */
+}
+
+.motto-container {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adds a semi-transparent background for better readability */
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /* Motto styling */
 .motto-container h3 {
   font-size: 3rem;
   font-weight: bold;
-  color: #5a3e2b; /* Brown theme */
+  color: #fcfcfc; /* Brown theme */
   max-width: auto;
 }
 
-/* Landing Page end*/
+@media (max-width: 768px) {
+  .motto-container h3 {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+}
 
+@media (min-width: 768px) {
+  .motto-container h3 {
+    font-size: 2rem; /* Larger font size for tablets and up */
+  }
+}
+
+/* Landing Page end*/
 
 /* Feature */
 .feature-container {
@@ -114,7 +134,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  color: #4A3F35; /* Brown theme to match your website */
+  color: #4a3f35; /* Brown theme to match your website */
 
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -126,11 +146,9 @@
   display: block;
   width: 80px; /* Adjust width as needed */
   height: 4px;
-  background-color: #D4A373; /* Accent color */
+  background-color: #d4a373; /* Accent color */
   margin: 8px auto 0;
   border-radius: 2px;
 }
-
-
 
 /* Feature end */
